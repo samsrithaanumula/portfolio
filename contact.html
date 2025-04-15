@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+    }
+
+    nav {
+      background-color: #2c3e50;
+    }
+
+    .navbar-brand {
+      color: white;
+      font-size: 27px;
+      font-family: cursive;
+    }
+
+    .navbar-nav .nav-link {
+      color: white ;
+      font-size: 30px;
+      align-items:center;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .contact-form {
+      background-color: #2c3e50;
+      padding: 25px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      color: #fff;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color: darkgray;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: brown;
+    }
+
+    .btn {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #34495e;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-nav .nav-link {
+        font-size: 16px;
+      }
+
+      .contact-form {
+        padding: 15px;
+        width: 80%;
+      }
+
+      .contact-form h2 {
+        font-size: 22px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        font-size: 14px;
+      }
+
+      .contact-form input[type="submit"] {
+        padding: 12px;
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar-nav .nav-link {
+        font-size: 14px;
+      }
+
+      .contact-form {
+        width: 90%;
+      }
+
+      .contact-form h2 {
+        font-size: 20px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        font-size: 12px;
+      }
+
+      .contact-form input[type="submit"] {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Samsritha Anumula</a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="./project.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
